@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="showroom_inherit_service" model="ir.ui.view">
+        <field name="name">Showroom Inherit</field>
+        <field name="model">showroom.car</field>
+        <field name="groups_id" eval="[(4,ref('showroom.group_service_advisor'))]"/>
+        <field name="inherit_id" ref="showroom.showroom_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='fuel_type']" position="attributes">
+                <attribute name="readonly">0</attribute>
+            </xpath>
+        </field>
+    </record>
+    <record id="showroom_inherit_technique" model="ir.ui.view">
+        <field name="name">Showroom Inherit</field>
+        <field name="model">showroom.car</field>
+        <field name="groups_id" eval="[(4,ref('showroom.group_technique'))]"/>
+        <field name="inherit_id" ref="showroom.showroom_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='year']" position="attributes">
+                <attribute name="readonly">1</attribute>
+            </xpath>
+        </field>
+    </record>
+    <record id="showroom_inherit_customer" model="ir.ui.view">
+        <field name="name">Showroom Inherit</field>
+        <field name="model">showroom.car</field>
+        <field name="groups_id" eval="[(4,ref('showroom.group_customer'))]"/>
+        <field name="inherit_id" ref="showroom.showroom_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='year']" position="attributes">
+                <attribute name="readonly">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='fuel_type']" position="attributes">
+                <attribute name="readonly">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='name']" position="attributes">
+                <attribute name="readonly">1</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>

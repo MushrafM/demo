@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="showroom_wizard_action" model="ir.actions.act_window">
+        <field name="name">Showroom Wizard Action</field>
+        <field name="res_model">wizard.showroom</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+    <record id="showroom_wizard_form" model="ir.ui.view">
+        <field name="name">showroom_wizard_form</field>
+        <field name="model">wizard.showroom</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="new_price"/>
+                    <footer>
+                        <button name="confirm" string="Confirm" type="object" class="btn-primary"/>
+                        <button string="Cancel" class="btn-default" special="cancel"/>
+                    </footer>
+                </group>
+            </form>
+        </field>
+    </record>
+</odoo>

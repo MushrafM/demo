@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_showroom_customer,showroom.customer,model_showroom_car,showroom.group_customer,1,1,0,0
+access_showroom_technique,showroom.technique,model_showroom_car,showroom.group_technique,1,1,1,0
+access_showroom_service,showroom.super,model_showroom_car,showroom.group_service_advisor,1,1,1,1
+access_wizard_showroom,wizard.showroom,model_wizard_showroom,,1,1,1,1
