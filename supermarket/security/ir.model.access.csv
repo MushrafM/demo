@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+access_supermarket_user,supermarket.user,model_supermarket_store,supermarket.group_user,1,0,0,0
+access_supermarket_manager,supermarket.manager,model_supermarket_store,supermarket.group_manager,1,1,1,0
+access_supermarket_super,supermarket.super,model_supermarket_store,supermarket.group_super_manager,1,1,1,1
+
+
+
+
+access_supermarket_wizard,name.supermarket.wizard,model_supermarket_wizard,,1,1,1,1

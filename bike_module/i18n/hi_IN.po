@@ -1,0 +1,230 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* bike_module
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-15 10:13+0000\n"
+"PO-Revision-Date: 2023-03-15 10:13+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bike_module
+#: model:mail.template,body_html:bike_module.bike_mail_template
+msgid ""
+"\n"
+"                \n"
+"                Hello sir,<br/>\n"
+"                congratulations for the product<br/>\n"
+"                name:${object.name}<br/>\n"
+"                month:${object.month}<br/>\n"
+"                Price:${object.price}<br/>\n"
+"                <br/>\n"
+"                regards.\n"
+"            "
+msgstr ""
+
+#. module: bike_module
+#: model:ir.model.fields,field_description:bike_module.field_bikes_bikes__name
+msgid " Bike Name"
+msgstr ""
+
+#. module: bike_module
+#: model:ir.model.fields,field_description:bike_module.field_res_partner__age
+#: model:ir.model.fields,field_description:bike_module.field_res_users__age
+msgid "Age"
+msgstr ""
+
+#. module: bike_module
+#: model_terms:ir.ui.view,arch_db:bike_module.bike_search_view
+msgid "Bike Search"
+msgstr ""
+
+#. module: bike_module
+#: model:mail.template,subject:bike_module.bike_mail_template
+msgid "Bike Sold ${object.name}"
+msgstr ""
+
+#. module: bike_module
+#: model:ir.actions.act_window,name:bike_module.bike_action
+#: model:ir.ui.menu,name:bike_module.bike_menu
+msgid "Bikes"
+msgstr ""
+
+#. module: bike_module
+#: model_terms:ir.ui.view,arch_db:bike_module.bike_form
+msgid "Check"
+msgstr ""
+
+#. module: bike_module
+#: model:ir.model,name:bike_module.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: bike_module
+#: model:ir.model.fields,field_description:bike_module.field_bikes_bikes__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: bike_module
+#: model:ir.model.fields,field_description:bike_module.field_bikes_bikes__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: bike_module
+#: model:ir.model.fields.selection,name:bike_module.selection__bikes_bikes__fuel_type__diesel
+msgid "Diesel"
+msgstr ""
+
+#. module: bike_module
+#: model:ir.model.fields,field_description:bike_module.field_bikes_bikes__display_name
+#: model:ir.model.fields,field_description:bike_module.field_res_partner__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: bike_module
+#: model:ir.model.fields,field_description:bike_module.field_bikes_bikes__driver_id
+msgid "Driver"
+msgstr "चालक"
+
+#. module: bike_module
+#: model:ir.model.fields,field_description:bike_module.field_bikes_bikes__driver_needed
+msgid "Driver Needed"
+msgstr "ड्राइवर की जरूरत है"
+
+#. module: bike_module
+#: model:ir.model.fields,field_description:bike_module.field_bikes_bikes__emi
+msgid "Emi"
+msgstr "ईएमआई"
+
+#. module: bike_module
+#: model:ir.model.fields.selection,name:bike_module.selection__bikes_bikes__fuel_type__ev
+msgid "Ev"
+msgstr "ईव"
+
+#. module: bike_module
+#: model:ir.model.fields,field_description:bike_module.field_bikes_bikes__fuel_type
+msgid "Fuel Type"
+msgstr "ईंधन प्रकार"
+
+#. module: bike_module
+#: model_terms:ir.ui.view,arch_db:bike_module.bike_search_view
+msgid "Group by .."
+msgstr ""
+
+#. module: bike_module
+#: model:ir.model.fields,field_description:bike_module.field_bikes_bikes__id
+#: model:ir.model.fields,field_description:bike_module.field_res_partner__id
+msgid "ID"
+msgstr ""
+
+#. module: bike_module
+#: model:ir.model.fields,field_description:bike_module.field_bikes_bikes__image
+msgid "Image"
+msgstr "छवि"
+
+#. module: bike_module
+#: model:ir.model.fields,field_description:bike_module.field_bikes_bikes__insurance_expiry
+msgid "Insurance Expiry"
+msgstr ""
+
+#. module: bike_module
+#: model:ir.model.fields,field_description:bike_module.field_bikes_bikes____last_update
+#: model:ir.model.fields,field_description:bike_module.field_res_partner____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: bike_module
+#: model:ir.model.fields,field_description:bike_module.field_bikes_bikes__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: bike_module
+#: model:ir.model.fields,field_description:bike_module.field_bikes_bikes__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: bike_module
+#: model:ir.model.fields,field_description:bike_module.field_bikes_bikes__month
+msgid "Month"
+msgstr "
+महीना"
+
+#. module: bike_module
+#: model_terms:ir.ui.view,arch_db:bike_module.bike_search_view
+msgid "My First Filter"
+msgstr ""
+
+#. module: bike_module
+#: model_terms:ir.ui.view,arch_db:bike_module.bike_search_view
+msgid "My Second Filter"
+msgstr ""
+
+#. module: bike_module
+#: model:ir.model.fields.selection,name:bike_module.selection__bikes_bikes__status__new
+msgid "New"
+msgstr ""
+
+#. module: bike_module
+#: model:ir.model.fields,field_description:bike_module.field_res_partner__other_information
+#: model:ir.model.fields,field_description:bike_module.field_res_users__other_information
+msgid "Other Messages"
+msgstr ""
+
+#. module: bike_module
+#: model:ir.model.fields.selection,name:bike_module.selection__bikes_bikes__fuel_type__petrol
+msgid "Petrol"
+msgstr ""
+
+#. module: bike_module
+#: model:ir.model.fields,field_description:bike_module.field_bikes_bikes__price
+msgid "Price"
+msgstr ""
+
+#. module: bike_module
+#: model:ir.model.fields,field_description:bike_module.field_bikes_bikes__bike_sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: bike_module
+#: model_terms:ir.ui.view,arch_db:bike_module.bike_form
+msgid "Set Bike Sold"
+msgstr ""
+
+#. module: bike_module
+#: model_terms:ir.ui.view,arch_db:bike_module.bike_form
+msgid "Set Bike Used"
+msgstr ""
+
+#. module: bike_module
+#: model:ir.model.fields.selection,name:bike_module.selection__bikes_bikes__status__sold
+msgid "Sold"
+msgstr ""
+
+#. module: bike_module
+#: model:ir.model.fields.selection,name:bike_module.selection__bikes_bikes__status__used
+msgid "Used"
+msgstr ""
+
+#. module: bike_module
+#: model:ir.model,name:bike_module.model_bikes_bikes
+msgid "bikes.bikes"
+msgstr ""
+
+#. module: bike_module
+#: model_terms:ir.ui.view,arch_db:bike_module.bike_search_view
+msgid "filter_3"
+msgstr ""
+
+#. module: bike_module
+#: model:ir.model.fields,field_description:bike_module.field_bikes_bikes__status
+#: model:ir.model.fields,field_description:bike_module.field_res_partner__messages
+#: model:ir.model.fields,field_description:bike_module.field_res_users__messages
+msgid "status"
+msgstr ""

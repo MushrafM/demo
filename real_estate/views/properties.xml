@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="properties_form" model="ir.ui.view">
+        <field name="name">Properties</field>
+        <field name="model">properties.properties</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_button_box">
+                        <button class="oe_stat_button" type="action" name="%(estate_action)d" icon="fa-rupee"
+                                string="offer">
+                            <field string="RealEstate" name="offer_count"/>
+                        </button>
+                    </div>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                    <notebook>
+                        <page string="properties">
+                            <field name="property_id">
+                                <tree>
+                                    <field name="name"/>
+                                    <field name="status1"/>
+                                    <field name="expected_price"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="properties_tree" model="ir.ui.view">
+        <field name="name">Properties</field>
+        <field name="model">properties.properties</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="property_action" model="ir.actions.act_window">
+        <field name="name">Properties</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">properties.properties</field>
+    </record>
+    <record id="property_actions" model="ir.actions.act_window">
+        <field name="name">Properties</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">property.property</field>
+    </record>
+    <menuitem id="property_menu" name="Settings" sequence="1" parent="estate_menu"/>
+    <menuitem id="property_type" name="Properties Type" sequence="1" parent="property_menu" action="property_action"/>
+    <menuitem id="property_tags" name="Properties Tag" sequence="1" parent="property_menu" action="property_actions"/>
+
+
+</odoo>

@@ -1,0 +1,12 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_bikes_user,bikes.user,model_bikes_bikes,bike_module.group_user,1,0,0,0
+access_bikes_manager,bikes.manager,model_bikes_bikes,bike_module.group_manager,1,1,1,0
+access_bikes_super,bikes.super.manager,model_bikes_bikes,bike_module.group_super_manager,1,1,1,1
+
+
+
+
+
+
+
+

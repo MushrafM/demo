@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="res_partner_inheritance" model="ir.ui.view">
+        <field name="name">Res Partner Inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <div name="button_box" position="inside">
+                <button class="oe_stat_button" type="object" name="get_cars" icon="fa-car" string="bike">
+                    <field string="Car" name="car_count"/>
+                </button>
+            </div>
+            <xpath expr="//field[@name='website']" position="after">
+                <field name="messages"/>
+            </xpath>
+            <xpath expr="//field[@name='ref']" position="replace">
+                <field name="age"/>
+            </xpath>
+        </field>
+    </record>
+    <record id="res_partner_tree_inheritance" model="ir.ui.view">
+        <field name="name">Res Partner tree Inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='email']" position="before">
+                <field name="messages"/>
+            </xpath>
+
+        </field>
+    </record>
+</odoo>

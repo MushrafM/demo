@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+<!--    action-->
+    <record id="supermarket_wizard_action" model="ir.actions.act_window">
+        <field name="name">Add New Price For Supermarket Store</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">supermarket.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+<!--    form view-->
+    <record id="supermarket_wizard_form" model="ir.ui.view">
+        <field name="name">supermarket.wizard.form</field>
+        <field name="model">supermarket.wizard</field>
+
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="price_plus"/>
+                </group>
+                <footer>
+                    <button name="ads" string="Confirm" type="object" class="btn-primary"/>
+                    <button string="Cancel" class="btn-default" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>
+
+

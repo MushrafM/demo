@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="supermarket_form" model="ir.ui.view">
+        <field name="name">SuperMarket</field>
+        <field name="model">supermarket.store</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <header>
+                        <button name="%(supermarket_wizard_action)d"  string="Update" type="action" class="oe_highlight"/>
+                    </header>
+                    <group>
+                        <field name="name"/>
+                        <field name="price"/>
+                        <field name="quantity"/>
+                        <field name="manufacturing_date"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="supermarket_tree" model="ir.ui.view">
+        <field name="name">SuperMarket</field>
+        <field name="model">supermarket.store</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="price"/>
+                <field name="quantity"/>
+                <field name="manufacturing_date"/>
+            </tree>
+        </field>
+    </record>
+    <record id="supermarket_action" model="ir.actions.act_window">
+        <field name="name">SuperMarket</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">supermarket.store</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem id="supermarket_menu" name="SuperMarket" sequence="4" action="supermarket_action"/>
+</odoo>
